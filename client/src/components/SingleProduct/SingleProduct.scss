@@ -1,0 +1,113 @@
+@import "../../css-config/mixins.scss";
+
+.productContent {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+
+    @include md {
+        flex-direction: row;
+    }
+
+    .productImage {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 40vw;
+        }
+    }
+
+    .productDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .textContent {
+            display: flex;
+            flex-direction: column;
+
+            .productName {
+                line-height: 2;
+                font-weight: 700;
+            }
+
+            .productPrice {
+                line-height: 2;
+                font-weight: 500;
+            }
+
+            .productDetails {
+                line-height: 2;
+                font-weight: 200;
+            }
+
+
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+
+            .cartDetails {
+                gap: 10px;
+                display: flex;
+
+                .quantityCounter {
+                    display: flex;
+
+                    span {
+                        width: 30px;
+                        height: 30px;
+                        padding: 5px 10px;
+                    }
+
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+
+                .atcButton {
+
+                    svg {
+                        font-size: 15px;
+                    }
+
+                    button {
+                        font-size: 12px;
+                        width: 125px;
+                        height: 30px;
+                        background-color: #aa37eb;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .category {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                gap: 10px;
+            }
+
+            .share {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                gap: 10px;
+
+                .iconsImage {
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,9 @@
+@import "../../css-config/mixins.scss";
+.mainContent{
+    // min-width: calc(100% - 20px);
+    margin: 0 auto;
+
+    @include md{
+        // min-width: 100;
+    }
+}

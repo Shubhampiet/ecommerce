@@ -1,0 +1,81 @@
+@import "../../../css-config/mixins.scss";
+
+.searchPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    z-index: 99;
+    background-color: white;
+
+    .searchHeader {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+
+        .searchHeaderText {
+            width: 90%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            
+            input{
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 25px;
+                border: hidden;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .SearchPageCloseButton {
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            color: rgb(243, 86, 86);
+
+            // margin-left: 3rem;
+
+            &:hover {
+                opacity: 30%;
+
+            }
+        }
+    }
+
+    .searchResultProduct {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 107px;
+
+        .productContainer {
+            // background-color: rgba(0, 0, 0);
+            // width: 50%;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            .searchProductImage {
+                img {
+                    width: 100px;
+                }
+            }
+
+            .searchProductName {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .searchProductDetails {
+                font-size: 15px;
+                font-weight: 100;
+            }
+        }
+    }
+}

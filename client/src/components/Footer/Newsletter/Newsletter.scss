@@ -1,0 +1,160 @@
+@import "../../../css-config/mixins.scss";
+
+.container {
+
+    .newsLetter {
+        height: 20rem;
+        border: 2px solid black;
+        overflow: hidden;
+        margin: 50px 0;
+        position: relative;
+
+
+        .imageContent {
+            z-index: 1;
+        }
+
+        .textContent {
+            position: absolute;
+            z-index: 9;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            h1 {
+                line-height: 1;
+                font-size: 30px;
+                margin-left: 2rem;
+            }
+
+            .inputfield {
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+                align-items: center;
+
+                @include md {
+                    flex-direction: row;
+                }
+
+                input {
+                    padding: 5px;
+                    width: 20rem;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+
+                button {
+                    padding: 5px;
+                    width: 8rem;
+                    background-color: rgb(131, 3, 131);
+                    color: white;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+
+            .iconsImage {
+                display: flex;
+                gap: 5px;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 3rem;
+
+
+        @include md {
+            flex-direction: row;
+        }
+
+        h3 {
+            line-height: 2;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            line-height: 2;
+        }
+
+        .about {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .contact {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+            .contactType {
+                display: flex;
+            }
+
+            svg {
+                font-size: 25px;
+
+
+            }
+        }
+
+        .categoriess {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+
+                li {
+                    list-style: none;
+                    line-height: 2;
+                }
+            }
+
+        }
+
+        .pages {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            list-style: none;
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+
+                li {
+                    list-style: none;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+// @import "../../css-config/mixins.scss";
+
+// .categories {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 10px;
+//     padding: 1rem;
+//     justify-content: center;
+//     width: 100vw;
+
+//     @include md {
+//         flex-wrap: nowrap;
+//     }
+//     .category{
+//         background-color: black;
+//         width: 45%;
+//         cursor: pointer;
+
+//         @include md{
+//             width: 15%;
+//         }
+//     }
+
+//     img {
+//         width: 100%;
+//         border-radius: 5px;
+//         transition: all ease 0.3s;
+
+//         &:hover {
+//             transform: scale(1.3);
+//         }
+//     }
+// }
