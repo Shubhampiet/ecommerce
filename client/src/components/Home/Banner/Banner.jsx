@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="content">
                 <div className="textContent">
                     <div> <h1>SALES</h1></div>
-                    <div><p>Lorem, netur ad, dolores ratione enim? Quis, distinctio nisi! distinctio nisi! </p></div>
+                    <div><p>Welcome to your Digital Dukan, We assure your best user experience  </p></div>
                     <div className="buttonContent">
                         <button className="button1">Read more</button>
                         <button>Shop now</button>

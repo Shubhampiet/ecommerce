@@ -1,0 +1,23 @@
+[
+    {
+      "id": "1",
+      "imageUrl": "https://m.media-amazon.com/images/I/61giWajD6xL._AC_UY218_.jpg",
+      "title": "Bluetooth Speakers"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://m.media-amazon.com/images/I/61aasAbKvvL._AC_UY218_.jpg",
+      "title": "Earbuds"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://m.media-amazon.com/images/I/61u1VALn6JL._AC_UY218_.jpg",
+      "title": "Headphones"
+    },
+    {
+        "id": "4",
+        "imageUrl": "https://m.media-amazon.com/images/I/71lYSEETh5L._AC_UY218_.jpg",
+        "title": "Smart Watches"
+      }
+  ]
+  

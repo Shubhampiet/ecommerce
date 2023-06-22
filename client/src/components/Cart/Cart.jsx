@@ -18,11 +18,6 @@ const{subtotal}=useContext(Context)
                     <h1>Cart Items</h1>
                     <span className="closeButton" onClick={() => setShowCart(false)}> Close<MdClose /></span>
                 </div>
-                {/* <div className="emptyCart">
-                    <span><BsCartX /></span>
-                    <span>No products in the cart</span>
-                    <button className="rtsButton">Return to Shop</button>
-                </div> */}
                     <CartItem/>
                 <div className="bottom">
                     <div className="subtotal">

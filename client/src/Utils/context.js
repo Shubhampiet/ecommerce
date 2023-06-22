@@ -4,10 +4,10 @@ import { useState } from "react";
 export const Context = createContext();
 
 const AppContext = ({ children }) => {
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState();
     const [products, setProducts] = useState([]);
-    const [categoryId, setcategoryId] = useState([]);
-    const [product, setProduct] = useState([]);
+    const [categoryId, setcategoryId] = useState();
+    const [product, setProduct] = useState();
     const [cartItems, setcartItems] = useState([]);
     const [cartItemsQuantity, setcartItemsQuantity] = useState();
     const [cartSubtotal, setcartSubtotal] = useState(0);
@@ -55,7 +55,7 @@ const AppContext = ({ children }) => {
             console.log("I am if")
         }
         else {
-            const existingItem = items.find((item) => item.product.img.data.id === cartObject.product.img.data.id)
+            const existingItem = items.find((item) => item.product.id === cartObject.product.id)
             console.log("I am else")
             if (existingItem) {
                 existingItem.quantity += cartObject.quantity

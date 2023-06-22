@@ -16,7 +16,7 @@ const singleProductPage=(id)=>{
     return(
         <div className="productCard" onClick={()=>{singleProductPage(data.id)}}>
             <div className="thumbnail">
-                <img src={process.env.REACT_APP_STRIPE_APP_DEV_URL + data.img.data.attributes.url} alt="" />
+                <img src={data.imageUrl} alt="" />
             </div>
             <div className="productDetails">
             <span className="name">{data.title.slice(0, 10) + '...'}</span>

@@ -32,7 +32,7 @@ const CartItem = ({ item }) => {
                 
                 <div className="cartProducts">
                 <div className="productImage">
-                    <img src={process.env.REACT_APP_STRIPE_APP_DEV_URL + item.product.img.data.attributes.url} alt="" />
+                    <img src={item.product.imageUrl} alt="" />
                 </div>
                 <div className="productDetails">
                     <div className="productNameAndButton">

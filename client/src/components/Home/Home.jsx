@@ -2,35 +2,21 @@ import {useEffect, useContext } from "react";
 import Category from "./Category/Category";
 import Products from "../Products/Products";
 import Banner from "./Banner/Banner";
-import { fetchDataFromApi } from "../../Utils/api";
+// import { fetchDataFromApi } from "../../Utils/api";
 import "./Home.scss";
 import { Context } from "../../Utils/context";
+import data from "../../data/category.json"
+import categoryProducts from "../../data/categoryProducts.json"
 
 
 const Home = () => {
 
-  const { products, setProducts, categories, setCategories } = useContext(Context);
-
+  const { products, setProducts, setCategories } = useContext(Context);
 
   useEffect(() => {
-    getCategories();
-    getProducts();
+    setCategories(data);
+    setProducts(categoryProducts)
   }, []);
-
-
-  const getProducts = () => {
-    fetchDataFromApi("/api/products?populate=*")
-    .then((response) => {
-      setProducts(response);
-   })
-  }
-
-  const getCategories = () => {
-    fetchDataFromApi("/api/categories?populate=*")
-    .then((response) => {
-      setCategories(response);
-    });
-  };
 
   return (
     <div >
@@ -38,7 +24,7 @@ const Home = () => {
       <div className="mainContent">
         <div className="layout">
           <Category />
-          <Products headingText={"Popular Products"} products={products.data}/>
+          <Products headingText={"Popular Products"} products={products}/>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const SingleProduct = () => {
         <div className="singleProduct">
             <div className="productContent">
                 <div className="productImage">
-                    <img src={process.env.REACT_APP_STRIPE_APP_DEV_URL + product.img.data.attributes.url} alt="" />
+                    <img src={product.imageUrl} alt="" />
                 </div>
 
                 <div className="productDetails">
@@ -36,7 +36,7 @@ const SingleProduct = () => {
                         </div>
                         <div className="category">
                             <h4>Category:</h4>
-                            <span><p>{product.category.data.attributes.title}</p></span>
+                            <span><p>{product.title}</p></span>
                         </div>
                         <div className="share">
                             <h4>Share:</h4>

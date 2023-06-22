@@ -13,7 +13,7 @@ const Search = ({ setShowSearchPage }) => {
     const onChangeHandler = (e) => {
         setQuery(e.target.value);
         console.log(data)
-        setData(products.data.filter((product) => { return product.attributes.title.toLowerCase().includes(query.toLowerCase()) }))
+        setData(products.filter((product) => { return product.title.toLowerCase().includes(query.toLowerCase()) }))
         
         if (query.length===0) {
             setData([]);
@@ -42,15 +42,15 @@ const Search = ({ setShowSearchPage }) => {
 
                     <div className="productContainer">
                         <div className="searchProductImage">
-                          <img src={process.env.REACT_APP_STRIPE_APP_DEV_URL + item.attributes.img.data.attributes.url} />
+                          <img src={item.imageUrl} />
                         </div>
                         <div className="searchProductDetails">
                             <div className="searchProductName">
-                                {item.attributes.title.slice(0,30) + ("...")}
+                                {item.title.slice(0,30) + ("...")}
                                 {data.length}
                             </div>
                             <div className="searchProductDescription">
-                                {item.attributes.description.slice(0,70) + ("...")}
+                                {item.description.slice(0,70) + ("...")}
                             </div>
                         </div>
                     </div>

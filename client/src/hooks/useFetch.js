@@ -1,20 +1,21 @@
-import { useEffect, useState } from "react"
-import { fetchDataFromApi } from "../Utils/api"
+// import { useEffect, useState } from "react"
+// import { fetchDataFromApi } from "../Utils/api"
 
-const useFetch = (endpoint)=>{
-    const [data,setData] = useState();
-console.log("i am usefetch")
+// const useFetch = (endpoint) => {
+//     const [data, setData] = useState();
+//     console.log("i am usefetch")
 
-    useEffect(()=>{makeApiCall()
-    }, [endpoint]);
+//     useEffect(() => {
+//         makeApiCall()
+//     }, [endpoint]);
 
 
-const makeApiCall =async ()=>{
-    const res= await fetchDataFromApi(endpoint);
-    setData(res);
-};
+//     const makeApiCall = async () => {
+//         const res = await fetchDataFromApi(endpoint);
+//         setData(res);
+//     };
+//     console.log("d",data)
+//     return { data };
+// }
 
-return {data};
-}
-
-export default useFetch;
+// export default useFetch;
