@@ -14,13 +14,16 @@ function App() {
         <AppContext>
         <Header />
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<>
+        <Home/>
+        <Newsletter />
+        </>}/>
             <Route path="/category/" element={<Category />}/>
             <Route path="/categoryProducts/:id" element={<CategoryProducts />}/>
             <Route path="/SingleProduct/:id" element={<SingleProduct />}/>
             <Route path="/about/:id" element={< Newsletter/>}/>
         </Routes>
-        <Newsletter />
+        // <Newsletter />
         <Footer />           
         </AppContext> 
         </BrowserRouter>
